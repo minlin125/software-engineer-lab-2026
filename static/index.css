@@ -1,0 +1,270 @@
+/* * {
+  outline: 2px solid #aee4ff;
+} */
+
+.navList {
+  display: flex;
+}
+
+.navList a:hover {
+    background-color: aquamarine;
+}
+
+.sm-title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+
+.services-card {
+    position: relative;
+    height: 100%;
+}
+
+.service-icon {
+    position: absolute;
+    right: 0;
+    padding-right: 24px;
+    font-size: 28px;
+}
+
+.services-prev,
+.services-next {
+    display: none;
+}
+
+.card-arrow-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;  
+}
+
+.projects-section h2 {
+    color: var(--color-neutral-700);
+    text-align: center;
+}
+
+.box-1 {
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true');
+}
+
+.box-2 {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true');
+}
+
+.box-3 {
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true');
+}
+
+.project-box {
+  width: 100%;
+  height: 400px; 
+  background-size: cover;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: start;
+  align-items:center;
+  text-align: center;
+}
+
+.big-card {
+    max-width: 386px;
+    margin-left: 28px;
+}
+
+.btn-project-action,
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    line-height: 1.5;
+}
+
+.more-btn {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+    .project-box {
+        min-height: 520px;
+        height: auto;
+        padding: 240px 12px 24px;
+        justify-content: center;
+        align-items: flex-start;
+        background-position: top center;
+        margin-bottom: 24px;
+    }
+
+    .big-card {
+        width: 100%;
+        max-width: 319px;
+        margin-left: 0;
+        padding: 24px;
+    }
+
+    .project-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .big-card h3,
+    .big-card p {
+        margin-bottom: 12px;
+    }
+
+    .btn-project-action {
+        margin-top: 0;
+    }
+
+    .more-btn {
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+}
+
+/* .hero-main {
+    height: calc(100vh - 64px) ;
+} */
+
+/* 在 376px ~ 992px 間隱藏導覽並顯示漢堡按鈕 */
+@media (min-width: 376px) and (max-width: 992px) {
+  .navList {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+
+   .navList.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background-color: var(--color-primary-50);
+    width: 100%;
+    padding: 16px 0;
+    z-index: 1000;
+    text-align: center;
+    gap: 12px;
+  }
+  .w-md-full {
+   width: 100%;
+  }
+  body.menu-open {
+    overflow: hidden;
+  }
+
+   body.menu-open .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-dark-60a);
+    }
+}
+
+@media (max-width: 375px) {
+    /* 行動裝置預設關閉 */
+    .navList {
+    display: none;
+  }
+  /* 行動裝置預設打開 */
+    .navList.active {
+        padding: 12px 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        background-color: var(--color-primary-50);
+        width: 100%;
+        text-align: center;
+        gap: 12px;
+    }
+    
+}
+
+/* 922px 以下調整表單寬度與內距，確保輸入欄位為單欄顯示 */
+@media (max-width: 922px) {
+  .col-7 {
+    width: 100%;
+  }
+
+  .contact-input-half {
+    width: 100%;
+  }
+
+  /* 減少表單左右過大內距 */
+  form.px-40 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .services-slider-wrapper {
+    position: relative;
+  }
+
+  .services-slider-wrapper .services-prev,
+  .services-slider-wrapper .services-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+
+  .services-slider-wrapper .services-prev { left: 8px; }
+  .services-slider-wrapper .services-next { right: 8px; }
+
+  .services-grid {
+    display: flex;
+    gap: 16px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .services-grid > .col-3 {
+    flex: 0 0 min(320px, 82vw);
+    max-width: min(320px, 82vw);
+    scroll-snap-align: start;
+  }
+
+  .services-card .d-flex {
+    align-items: flex-end;
+    gap: 16px;
+  }
+
+  .services-card .paragraph-md {
+    flex: 1;
+  }
+
+  .services-grid::-webkit-scrollbar { height: 8px; }
+  .services-grid::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius:4px; }
+}
+
+
+

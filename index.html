@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/reset.css">
+    <link rel="stylesheet" href="./static/base.css">
+    <link rel="stylesheet" href="./static/index.css">
+
+    
+    <!-- icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+
+    <title>Nelson | Portfolio</title>
+</head>
+<body>
+    <!-- 遮罩使用 -->
+    <div class="mask">
+
+    </div>
+    <!-- 頁首區域 -->
+    <header class="bg-primary-50 z-index-1 relative">
+      <nav> 
+        <!-- 網站圖示 -->
+         <div class="container">
+          <div class="d-flex py-12 align-items-center justify-content-between">
+            <a href="#">
+             <picture>
+                <source srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/47001d42324ec6a2c7d00cc74ea79d70c57d578a/2026-web-camp/device-mobile.svg" alt="手機版LOGO"  media="(min-width: 992px)"/>
+
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/47001d42324ec6a2c7d00cc74ea79d70c57d578a/2026-web-camp/device-pc.svg" alt="電腦版LOGO">   
+            </picture> 
+            </a>
+
+            <!-- 行動版(漢堡按鈕) -->
+            <button class="menu-btn d-none d-md-block p-12 active" type="button">
+                <span class="material-symbols-outlined">
+                    dehaze
+                </span>
+
+            </button>
+            
+            <!-- 導覽列清單 -->
+            <ul class="navList ml-auto d-flex lable-md text-neutral-700 gap-24 align-items-center">
+                <li class="w-md-full">
+                    <a class="px-12 py-4" href="#">服務項目</a>
+                </li>
+                <li class="w-md-full">
+                    <a class="px-12 py-4" href="#">專案作品</a>
+                </li>
+                <li class="w-md-full">
+                    <a class="px-12 py-4" href="#">部落格</a>
+                </li>
+                <li class="w-md-full">
+                    <a class="px-12 py-4" href="#">與我聯絡</a>
+                </li>
+            </ul>
+           </div> 
+         </div>
+        </nav>
+    </header>
+
+    <!-- Hero 區域 -->
+    <section class="hero-main bg-primary-50 ">
+     <div class="container pb-md-24">   
+      <div class="d-flex text-neutral-700 flex-md-col">  
+        <div class="col-5 m-auto col-md-12 order-md-2 mt-md-24">
+            <!-- 標題 -->
+            <h1 class="mb-24 heading-mobile-xl mb-md-12">
+                <!-- <h1 class="heading-xxxl"> Hello I'm<br>Nelson</h1> 這個寫法也可以，若只是硬斷行且不需單獨操作，<br> 較簡潔；若想更彈性（響應式、動效），用 <span> 更好。-->
+                <span class="d-block heading-xxxl heading-md-xl">Hello</span>
+                <span class="d-block heading-xxxl heading-md-xl">I'm Nelson</span></h1>
+
+                <!-- 內文 -->
+                <p class="paragraph-md mb-4 paragraph-mobile-sm">我是一個擁有 10 年經驗的 UIUX 設計師 和 前端工程師</p>
+                <p class="paragraph-md mb-60 paragraph-mobile-sm mb-md-32">喜歡把美學和程式結合，打造一個又一個精美的網頁設計！</p>
+
+                <div class="lable-md label-mobile-sm">         
+                   <button class="py-12 px-24 text-neutral-0 bg-neutral-700 rounded-full mr-24" type="button">與我聯絡</button>
+                   <button class="py-12 px-24 btn-outline rounded-full" type="button">我的履歷</button>
+                </div>
+        </div> 
+            <!-- 圖片 -->
+        <div class="col-7 col-md-12 order-md-1">
+            <div>
+                <img class="object-fit-cover" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/index_person.png?raw=true" alt="">
+            </div>
+        </div>
+      </div>  
+     </div>  
+    </section>
+
+    <section class="hero-service bg-primary-900">
+        <div class="container">
+            <div class="d-flex flex-md-col"> 
+                <h2 class="serviceTitle mb-24 text-neutral-0 mt-80">
+                <span class="d-block heading-xxxs  heading-mobile-xxxxs">服務項目</span>
+                <span class="d-block heading-xxxl heading-mobile-xl">SERVICES</span>
+            </h2>
+        </div>
+          <div class="services-slider-wrapper">
+             <button class="services-prev" aria-label="上一張">‹</button>
+             <div class="d-flex justify-content-space services-grid text-neutral-700">
+              <div class="col-3">
+            <div class="services-card bg-primary-50 pt-24 px-24 pb-24">
+               <div class="services-top"> 
+                <a href="#">
+                    <span class="sm-title heading-xxxs">GRAPHIC</span>
+                    <span class="service-icon material-symbols-outlined">format_color_fill    
+                    </span>
+                    <h3 class="heading-md">平面設計</h3>
+                    <div class="d-flex">
+                    <p class="paragraph-md">從品牌識別到視覺傳達，用專業設計精準傳遞核心價值</p>
+                    <span class="card-arrow-btn bg-neutral-700 text-neutral-0 rounded-full ">↗</span>
+                    </div>    
+                </a>
+               </div> 
+            </div>
+           </div> 
+
+           <div class="col-3">
+            <div class="services-card bg-primary-50 pt-24 px-24 pb-24">
+               <div class="services-top"> 
+                <a href="#">  
+                    <span class="sm-title heading-xxxs">WEBSITE</span>
+                    <span class="service-icon material-symbols-outlined">screenshot_monitor
+
+                   </span>
+                    <h3 class="heading-md">網頁設計</h3>
+                    <div class="d-flex">
+                    <p class="paragraph-md">美感易用並重，以 Figma 打造符合直覺的數位體驗</p>
+                    <span class="card-arrow-btn bg-neutral-700 text-neutral-0 rounded-full">↗</span>
+                    </div>
+                </a>
+               </div> 
+            </div>
+           </div> 
+
+           <div class="col-3">
+            <div class="services-card bg-primary-50 pt-24 px-24 pb-24">
+               <div class="services-top"> 
+                <a href="#">
+                    <span class="sm-title heading-xxxs">FRONTEND</span>
+                    <span class="service-icon material-symbols-outlined">web
+                   </span> 
+                    <h3 class="heading-md">前端切版</h3>
+                    <div class="d-flex">
+                    <p class="paragraph-md">精準轉譯設計稿細節，建構流暢穩定 RWD 響應式網頁</p>
+                    <span class="card-arrow-btn bg-neutral-700 text-neutral-0 rounded-full">↗</span>
+                    </div>
+                </a>
+               </div> 
+            </div>
+           </div> 
+
+           <div class="col-3">
+            <div class="services-card bg-primary-50 pt-24 px-24 pb-24">
+               <div class="services-top"> 
+                <a href="#"> 
+                    <span class="sm-title heading-xxxs">BACKEND</span>
+                    <span class="service-icon   material-symbols-outlined">data_table
+                    
+                   </span> 
+                    <h3 class="heading-md">後端開發</h3>
+                    <div class="d-flex">
+                    <p class="paragraph-md">佈署穩定系統架構，串接 API 並確保數據處理安全</p>
+                    <span class="card-arrow-btn bg-neutral-700 text-neutral-0 rounded-full">↗</span>
+                    </div>
+                </a>
+               </div> 
+            </div>
+              </div> 
+            
+             </div>
+             <button class="services-next" aria-label="下一張">›</button>
+          </div>
+    </section>
+
+    <section class="projects-section bg-primary-50">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-md-col"> 
+                <h2 class="serviceTitle mb-24 text-neutral-0 mt-80">
+                <span class="d-block heading-xxxs  heading-mobile-xxxs">專案作品</span>
+                <span class="d-block heading-xxxl heading-mobile-xl">PROJECTS</span>
+            </h2>
+        </div>
+
+        <div class="project-section">
+             <div class="project-info">
+                  <div class="box-1 project-box line-height-2">
+                      <div class="big-card bg-primary-50 px-40 py-40">
+                        <div class="project-meta">
+                            <span class="project-date paragraph-sm">Oct 16, 2025</span>
+                            <h4 class="project-category paragraph-md">平面設計．網頁設計</h4>
+                        </div>
+
+                        <h3 class="heading-sm">品牌視覺與電商整合，多肉植物品牌電商建置</h3>
+
+                        <p class="paragraph-md">從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗</p>
+
+                        <a href="#" class="btn-project-action lable-md bg-neutral-700 rounded-full text-neutral-0 mt-12">前往專案</a>
+                      </div>  
+                 </div>
+
+                 <div class="box-2 project-box line-height-2">
+                    <div class="big-card bg-primary-50 px-40 py-40">
+                        <div class="project-meta">
+                            <span class="project-date paragraph-sm">Oct 16, 2025</span>
+                            <h4 class="project-category paragraph-md">平面設計．網頁設計．前端切版</h4>
+                        </div>
+
+                        <h3 class="heading-sm">數位產品 UI/UX 設計，個人化財務視覺化軟體</h3>
+
+                        <p class="paragraph-md">運用數據視覺化邏輯，將複雜的財務數據轉化為直覺的操作介面</p>
+
+                        <a href="#" class="btn-project-action lable-md bg-neutral-700 rounded-full text-neutral-0 mt-12">前往專案</a>
+                      </div>  
+                    </div>
+
+                 <div class="box-3 project-box line-height-2">
+                    <div class="big-card bg-primary-50 px-40 py-40">
+                        <div class="project-meta">
+                            <span class="project-date paragraph-sm">Oct 16, 2025</span>
+                            <h4 class="project-category paragraph-md">平面設計．網頁設計</h4>
+                        </div>
+
+                        <h3 class="heading-sm">品牌視覺與電商整合，多肉植物品牌電商建置</h3>
+
+                        <p class="paragraph-md">從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗</p>
+
+                        <a href="#" class="btn-project-action lable-md bg-neutral-700 rounded-full text-neutral-0 mt-12">前往專案</a>
+                      </div>  
+                    </div>      
+        </div>
+         <div class="text-center">
+                <a href="#" class="more-btn lable-md bg-neutral-700 rounded-full text-neutral-0 mt-12">查看更多作品</a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 頁尾區域 -->
+    <footer class="bg-primary-900 text-neutral-0 py-80">
+     <div class="container">
+       <div class="d-flex flex-md-col"> 
+        <!-- 聯絡資訊區塊 -->
+        <div class="col-5">
+              <!-- 標題 -->
+            <h2 class="mb-24">
+                <span class="d-block heading-xxxs  heading-mobile-xxxxs">與我聯絡</span>
+                <span class="d-block heading-xxxl  heading-mobile-xl">CONTACT</span>
+            </h2>
+
+            <!-- 內文 -->
+            <p class="paragraph-md mb-4">若有數位產品設計和開發相關問題</p>
+            <p class="paragraph-md mb-92">歡迎透過以下方式與我聯絡！</p>
+
+         <!-- social icons -->
+         <div class="d-block d-md-none">
+           <div class="socialIcons d-flex mb-24 gap-12">
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-instagram text-24"></i></a>
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-facebook text-24"></i></a>
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-linkedin text-24"></i></a>
+          </div> 
+            <!-- 信箱資訊 -->
+         <a class="d-flex gap-8" href="mailto:service@hexschool.com">
+            <span class="material-symbols-outlined text-24">drafts</span>
+            <p class="paragraph-md">service@hexschool.com</p>
+         </a>
+         </div>  
+        </div>
+        
+        
+        <!-- 聯絡資訊表格 -->
+        <div class="col-7">
+            <form class="d-flex flex-wrap gap-24 px-40 paragraph-md">
+                <input class="contact-input-half btn-outline rounded-40 w-full px-32 py-19 " type="text" placeholder="姓名"/>
+                <input class="contact-input-half btn-outline rounded-40 w-full px-32 py-19 " type="tel" placeholder="手機號碼"/> 
+                <input class="btn-outline rounded-40 w-full px-32 py-19 " type="email" placeholder="電子信箱"/>
+                <textarea class="btn-outline rounded-40 w-full px-32 py-19 " rows="4" placeholder="備註"></textarea>
+                <button class="paragraph-md bg-neutral-0 py-12 w-full text-center text-neutral-700 rounded-full" type="submit">送出</button>
+            </form>
+        </div>
+        <!-- 行動裝置版本 -->
+        <div class="d-none d-md-block mt-24 ml-14">
+            <!-- social icons -->
+           <div class="socialIcons d-flex mb-24 gap-12">
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-instagram text-24"></i></a>
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-facebook text-24"></i></a>
+            <a href="#" target="_blank" class="p-12 rounded-full btn-outline line-height-1">
+            <i class="bi bi-linkedin text-24"></i></a>
+          </div> 
+           <!-- 信箱資訊 -->
+            <a class="d-flex gap-8" href="mailto:service@hexschool.com">
+            <span class="material-symbols-outlined text-24">drafts</span>
+            <p class="paragraph-md">service@hexschool.com</p>
+         </a>
+      </div>    
+     </div>   
+    </footer>
+</body>
+
+<script src="./index.js"></script>
+</html>
