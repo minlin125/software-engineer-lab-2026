@@ -322,6 +322,10 @@ h1 {
   margin-bottom: 60px;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .mb-92 {
   margin-bottom: 92px;
 }
@@ -340,6 +344,10 @@ h1 {
 
 .pb-4 {
   padding-bottom: 4px;
+}
+
+.pb-80 {
+  padding-bottom: 80px;
 }
 
 .p-8 {
@@ -394,6 +402,10 @@ h1 {
 
 .pt-40 {
   padding-top: 40px;
+}
+
+.pt-80 {
+  padding-top: 80px;
 }
 
 .pb-24 {
