@@ -85,26 +85,83 @@
     line-height: 1.5;
 }
 
-.more-btn {
-    margin-bottom: 40px;
-}
 
-.blog-section {
-  position: relative;
-}
-
-.btn-position {
-  display: flex;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin-right: 70px;
-}
-
-.hero-service,.projects-section {
+.hero-service,.projects-section,.blog-list {
   width: 90%;
   margin: 0 auto;
 }
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog-list {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 80px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.blog-content {
+  margin-top: 12px;
+}
+
+.blog-card-title {
+  margin-top: 12px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
+.blog-card {
+  flex: 0 0 calc((100% - 48px) / 3);
+}
+
+@media (max-width: 900px) {
+  .blog-card {
+    flex: 0 0 100%;
+  }
+}
+
+.blog-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+  font-size: 14px;
+  color: var(color-neutral-700);
+}
+
+.blog-date {
+  margin-right: 30%;
+}
+
+.blog-slider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.blog-list {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.blog-card {
+  flex: 0 0 360px;
+}
+
+
+
+
+
 
 @media (max-width: 992px) {
     .project-box {
