@@ -1,4 +1,4 @@
-# Nelson Portfolio 網站作業學習紀錄
+# Nelson Portfolio 網站作業學習紀錄 (AI輔助整理)
 
 ## 作業主題
 
