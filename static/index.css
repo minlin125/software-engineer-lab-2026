@@ -94,9 +94,11 @@
 }
 
 .btn-position {
+  display: flex;
   position: absolute;
   right: 0;
-  margin-right: 30px;
+  bottom: 0;
+  margin-right: 70px;
 }
 
 .hero-service,.projects-section {
