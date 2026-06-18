@@ -121,9 +121,27 @@
   flex: 0 0 calc((100% - 48px) / 3);
 }
 
+.blog-slider-button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-neutral-0);
+  color: var(--color-neutral-500);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 600;
+  }
+
 @media (max-width: 900px) {
   .blog-card {
-    flex: 0 0 100%;
+    flex: 0 0 90%;
+  }
+
+  .blog-slider-button {
+    display: none;
   }
 }
 
@@ -133,7 +151,7 @@
   gap: 12px;
   margin-top: 16px;
   font-size: 14px;
-  color: var(color-neutral-700);
+  color: var(--color-neutral-700--);
 }
 
 .blog-date {
