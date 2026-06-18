@@ -89,6 +89,21 @@
     margin-bottom: 40px;
 }
 
+.blog-section {
+  position: relative;
+}
+
+.btn-position {
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+}
+
+.hero-service,.projects-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
 @media (max-width: 992px) {
     .project-box {
         min-height: 520px;
