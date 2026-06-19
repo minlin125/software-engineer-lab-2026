@@ -169,10 +169,10 @@
 
 @media (max-width: 900px) {
   .blog-slider {
+    margin: 0 auto;
     display: block;
-    width: 100%;
+    width: 90%;
     overflow: hidden;
-    padding-left: 30px;
   }
 
   .blog-list {
