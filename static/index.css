@@ -160,6 +160,7 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  min-width: 0;
 }
 
 .blog-card {
@@ -168,15 +169,23 @@
 
 @media (max-width: 900px) {
   .blog-slider {
+    display: block;
     width: 100%;
     overflow: hidden;
   }
 
   .blog-list {
+    width: 100%;
+    flex: 1;
+    min-width: 0;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
-    padding-bottom: 12px;
+    scrollbar-width: none;
+  }
+
+  .blog-list::-webkit-scrollbar {
+    display: none;
   }
 
   .blog-card {
